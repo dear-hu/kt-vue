@@ -16,6 +16,7 @@
 }
 #nav {
   padding: 30px;
+  margin:0 auto;
   a {
     font-weight: bold;
     color: #2c3e50;
