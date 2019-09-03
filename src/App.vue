@@ -1,9 +1,13 @@
 <template>
     <div id="app">
-        <Head/>
-        <div  class="content">
-            <router-view/>
-        </div>
+		<el-container>
+		  <el-header>
+			  <Head/>
+		  </el-header>
+		  <el-main>
+			  <router-view/>
+		  </el-main>
+		</el-container>
 
     </div>
 </template>
