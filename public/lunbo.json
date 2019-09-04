@@ -1,0 +1,23 @@
+{
+	"returnCode":"0",
+	"returnMessage":"成功",
+	"bean":{
+		"total":23
+	},
+	"beans":[{
+		"id":0,
+		"url":"www.baidu.com",
+		"title":"banner0",
+		"img":"http://localhost:8888/img/banner_01.jpg"
+	},{
+		"id":1,
+		"url":"www.baidu.com",
+		"title":"banner0",
+		"img":"http://localhost:8888/img/banner_02.jpg"
+	},{
+		"id":2,
+		"url":"www.baidu.com",
+		"title":"banner0",
+		"img":"http://localhost:8888/img/banner_03.jpg"
+	}]
+}
