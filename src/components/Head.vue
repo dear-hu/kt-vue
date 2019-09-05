@@ -1,54 +1,54 @@
 <template>
 	<div class="header">
 		<el-row :gutter="20">
-		<el-col :span="5" :offset="1">
+		<el-col :md="5" :sm="3" :offset="1">
 			<div class="logo">
 				<a href="javascript:void(0)">
 					<el-row :gutter="20">
-						<el-col :span="5">
+						<el-col :md="5">
 							<img src="../assets/img/nav_logo.png" alt="堃泰生物科技有限公司" class="logoIcon" />
 						</el-col>
-						<el-col :span="18" :offset="1">
-							<p class='hidden-sm-and-down'>堃泰生物科技有限公司</p>
+						<el-col :md="18" :offset="1" class='hidden-md-and-down'>
+							<p>堃泰生物科技有限公司</p>
 						</el-col>
 					</el-row>
 				</a>
 			</div>
 		</el-col>
-		<el-col :span="17">
+		<el-col :md="17" :sm="19">
 			<ul class="navbar-nav ml-auto">
 				<el-row :gutter="20">
-					<el-col :span="3" :offset="2">
+					<el-col :span="3" :offset="2" class="nav-item-box">
 						<li class="nav-item" :class="{active:'/' === $route.path }"  @click="goto('/')">
 							<a class="nav-link" href="javascript:void(0)">官网首页</a>
 						</li>
 					</el-col>
-					<el-col :span="3">
+					<el-col :span="3" class="nav-item-box">
 						<li class="nav-item" :class="{active:'/news' === $route.path }" @click="goto('/news')">
 							<a class="nav-link" href="javascript:void(0)">新闻中心</a>
 						</li>
 					</el-col>
-					<el-col :span="3">
+					<el-col :span="3" class="nav-item-box"> 
 						<li class="nav-item" :class="{active:'/product' === $route.path }" @click="goto('/product')">
 							<a class="nav-link" href="javascript:void(0)">产品中心</a>
 						</li>
 					</el-col>
-					<el-col :span="3">
+					<el-col :span="3" class="nav-item-box"> 
 						<li class="nav-item " :class="{active:'/research' === $route.path }" @click="goto('/research')">
 							<a class="nav-link" href="javascript:void(0)">研发技术</a>
 						</li>
 					</el-col>
-					<el-col :span="3">
+					<el-col :span="3" class="nav-item-box"> 
 						<li class="nav-item" :class="{active:'/plant' === $route.path }" @click="goto('/plant')">
 							<a class="nav-link" href="javascript:void(0)">农化服务</a>
 						</li>
 					</el-col>
-					<el-col :span="3">
+					<el-col :span="3" class="nav-item-box"> 
 						<li class="nav-item" :class="{active:'/idea' === $route.path }" @click="goto('/idea')">
 							<a class="nav-link" href="javascript:void(0)">人才战略</a>
 						</li>
 					</el-col>
-					<el-col :span="3">
+					<el-col :span="3" class="nav-item-box"> 
 						<li class="nav-item" :class="{active:'/about' === $route.path }" @click="goto('/about')">
 							<a class="nav-link" href="#">关于我们</a>
 						</li>
@@ -96,10 +96,14 @@
 				font-size: 16px;
 			}
 		}
+		.nav-item-box{
+			padding-left: 0!important;
+			padding-right: 0!important;
+		}
 		
 		.nav-item{
 			a{
-				padding: 5px 11px;
+				padding: 5px 10px;
 				font-weight: 600;
 				font-size: 14px;				
 				border-radius: 8px;				

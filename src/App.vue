@@ -26,7 +26,8 @@
 </script>
 
 <style lang="scss">
-	.content {
-		padding-top: 100px;
+	@import "./assets/css/reset.css";
+	.el-main{
+		padding: 20px 0!important;
 	}
 </style>
